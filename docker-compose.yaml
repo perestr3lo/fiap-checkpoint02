@@ -4,13 +4,14 @@ services:
     image: pallestrelli/fiap-checkpoint2:latest
     container_name: consultas
     environment:
-      - REDIS_HOST=stg
+      - PROFILE=stg
     networks:
       - consulta
     ports:
       - "8080:8080"
     depends_on:
-      - mysql
+      mysql:
+        condition: service_started
 
   mysql:
     image: mysql:latest
