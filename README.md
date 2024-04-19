@@ -20,6 +20,7 @@ docker pull pallestrelli/fiap-checkpoint2
 Isso irá baixar a imagem necessária para executar a aplicação em seu ambiente local.
 
 Para executar com perfil "dev", utilize o seguinte comando:
+
 ```bash
 docker run -d -p 8080:8080 -e PROFILE=dev pallestrelli/fiap-checkpoint2
 ```
@@ -27,19 +28,16 @@ docker run -d -p 8080:8080 -e PROFILE=dev pallestrelli/fiap-checkpoint2
 Para executar com perfil "stg", utilize o seguinte comando:
 
 ```bash
-docker run -d -p 8080:8080 -e PROFILE=stg pallestrelli/fiap-checkpoint1
+docker compose up
 ```
 
-## Acesso à Aplicação
+## Acesso à Aplicação (Dev Profile) 
 Após a execução da aplicação, você poderá acessá-la em `http://localhost:8080/h2-console`.
 Isso quando você estiver executando a aplicação a partir do "profile" <DEV> caso contrário essa rota não estara disponível.
 
-## Criar tabelas MySQL
-Para replicar as tabelas dentro do seu banco MySQL você podera utilizar o **Docker Compose** dessa maneira nossa aplicação estara toda containerizada.
-```bash
-docker compose up 
-```
-
+## Docker Compose && MySQL Tables (STG Profile)
+Para o profile <STG> iremos utilizar o Docker Compose, dessa maneira tanto o MySQL quanto a nossa aplicação estara conteinerizada e acessíveis entre elas.
+Com isso as colunas serão criadas dentro do seu banco de dados MySQL. 
 
 
 ## 📢📢 ATENÇÃO!!
