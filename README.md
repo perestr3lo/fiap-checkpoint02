@@ -2,16 +2,16 @@
 
 Este repositório contém a aplicação Fiap Checkpoint 01.
 
-### Prérequisitos
+### Pré-requisitos
 * Java 17+
 * Docker
-* Acesso a internet
+* Acesso à internet
 * Acesso ao Docker Hub
 
 
 ### Instruções de Uso
 
-Antes de executar a aplicação, você precisa obter a imagem do Docker Hub. Para fazer isso, utilize o seguinte comando:
+Antes de executar a aplicação, é necessário obter a imagem do Docker Hub. Para isso, utilize o seguinte comando:
 
 ```bash
 docker pull pallestrelli/fiap-checkpoint2
@@ -19,25 +19,25 @@ docker pull pallestrelli/fiap-checkpoint2
 
 Isso irá baixar a imagem necessária para executar a aplicação em seu ambiente local.
 
-Para executar com perfil "dev", utilize o seguinte comando:
+Para executar com o perfil "dev", utilize o seguinte comando:
 
 ```bash
 docker run -d -p 8080:8080 -e PROFILE=dev pallestrelli/fiap-checkpoint2
 ```
 
-Para executar com perfil "stg", utilize o seguinte comando:
+Para executar com o perfil "stg", utilize o seguinte comando:
 
 ```bash
 docker compose up
 ```
 
-## Acesso à Aplicação (Dev Profile) 
+## Acesso à Aplicação (Perfil Dev) 
 Após a execução da aplicação, você poderá acessá-la em `http://localhost:8080/h2-console`.
-Isso quando você estiver executando a aplicação a partir do "profile" <DEV> caso contrário essa rota não estara disponível.
+Isso estará disponível apenas quando você estiver executando a aplicação com o perfil "dev".
 
-## Docker Compose && MySQL Tables (Stage profile)
-Para o profile <STG> iremos utilizar o Docker Compose, dessa maneira tanto o MySQL quanto a nossa aplicação estara conteinerizada e acessíveis entre elas.
-Com isso as colunas serão criadas dentro do seu banco de dados MySQL. 
+## Docker Compose && MySQL Tables (Perfil Stage)
+Para o perfil "stg", utilizamos o Docker Compose, dessa forma, tanto o MySQL quanto a nossa aplicação estarão conteinerizados e acessíveis entre elas.
+Com isso, as tabelas serão criadas dentro do seu banco de dados MySQL. 
 
 
 ## 📢📢 ATENÇÃO!!
