@@ -35,7 +35,7 @@ docker compose up
 Após a execução da aplicação, você poderá acessá-la em `http://localhost:8080/h2-console`.
 Isso quando você estiver executando a aplicação a partir do "profile" <DEV> caso contrário essa rota não estara disponível.
 
-## Docker Compose && MySQL Tables (STG Profile)
+## Docker Compose && MySQL Tables (Stage profile)
 Para o profile <STG> iremos utilizar o Docker Compose, dessa maneira tanto o MySQL quanto a nossa aplicação estara conteinerizada e acessíveis entre elas.
 Com isso as colunas serão criadas dentro do seu banco de dados MySQL. 
 
