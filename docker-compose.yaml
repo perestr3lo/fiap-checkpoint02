@@ -1,0 +1,28 @@
+version: '3.8'
+services:
+  consultas:
+    image: pallestrelli/fiap-checkpoint2:latest
+    container_name: consultas
+    environment:
+      - REDIS_HOST=stg
+    networks:
+      - consulta
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mysql
+
+  mysql:
+    image: mysql:latest
+    networks:
+      - consulta
+    environment:
+      - MYSQL_ROOT_PASSWORD=root_pwd
+      - MYSQL_USER=new_user
+      - MYSQL_PASSWORD=my_pwd
+    ports:
+      - "3306:3306"
+
+networks:
+  consulta:
+    driver: bridge
