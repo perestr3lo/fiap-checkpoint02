@@ -31,11 +31,11 @@ Para executar com o perfil "stg", utilize o seguinte comando:
 docker compose up
 ```
 
-## Acesso à Aplicação (Perfil Dev) 
+### Acesso à Aplicação (Perfil Dev) 
 Após a execução da aplicação, você poderá acessá-la em `http://localhost:8080/h2-console`.
 Isso estará disponível apenas quando você estiver executando a aplicação com o perfil "dev".
 
-## Docker Compose && MySQL Tables (Perfil Stage)
+### Docker Compose && MySQL Tables (Perfil Stage)
 Para o perfil "stg", utilizamos o Docker Compose, dessa forma, tanto o MySQL quanto a nossa aplicação estarão conteinerizados e acessíveis entre elas.
 Com isso, as tabelas serão criadas dentro do seu banco de dados MySQL. 
 
