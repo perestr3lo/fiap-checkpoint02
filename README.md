@@ -40,7 +40,7 @@ Para o perfil "stg", utilizamos o Docker Compose, dessa forma, tanto o MySQL qua
 Com isso, as tabelas serão criadas dentro do seu banco de dados MySQL. 
 
 
-## 📢📢 ATENÇÃO!!
+## 📢 ATENÇÃO
 Certifique-se de ter o Docker instalado e em execução em sua máquina antes de executar os comandos acima.
 
 ## Participantes
