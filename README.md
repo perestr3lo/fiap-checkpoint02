@@ -1,6 +1,6 @@
 ## 🚀 README.md
 
-Este repositório contém a aplicação Fiap Checkpoint 01.
+Este repositório contém a aplicação Fiap Checkpoint 02.
 
 ### Pré-requisitos
 * Java 17+
